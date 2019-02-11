@@ -46,9 +46,13 @@ main ul {
     width: 90%;
 }
 
-.featured p {
-    margin: 5%;
-    line-height: 2em;
+#featuredBio {
+    background-color: grey;
+    width: 90%;
+    height: 150px;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .demoGit {
