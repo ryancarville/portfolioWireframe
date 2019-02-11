@@ -41,12 +41,16 @@ main ul {
     list-style: none;
 }
 
+.featured {
+    width: 90%;
+}
+
 .demoGit {
     display: flex;
     justify-content: space-around;
     margin-right: 10%;
 }
 
-.contactHome {
-    width: 15%;
+.contactHome img{
+    width: 60px;
 }
