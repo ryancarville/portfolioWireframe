@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: grey;
+    height: 60px;
+    width: 100%;
+    color: white;
+}
+
+nav img {
+    display: none;
+}
+
+.navLinks {
+    display: none;
+    flex-direction: row;
+    list-style: none;
+}
+
+main {
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+main ul {
+    list-style: none;
+}
+
+.demoGit {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10%;
+}
