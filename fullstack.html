@@ -3,45 +3,70 @@
     <head>
         <title>Portfolio Wireframe - Fullstack Work</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <meta name="viewport" content="width=device-width">
         <meta name="description" content="HTML wireframe for portolio app">
         <meta name="keywords" content="wireframe, html, portfolio">
-        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
         <link rel="stylesheet" type="text/css" href="main.css">
     </head>
     <body>
         <nav role="navigation">
-            <p>NAME</p>
-            <p>HAMBURGER ICON</p>
-            <img src="beardylogo.png" alt="beardy studios logo">
-            <img src="hamburger.png" alt="hamburger menu icon">
-            <ul class="navLinks">
-                <li><a class="navLink1" href="fullstack.html">fullstack</a></li>
-                <li><a class="navLink2" href="photography.html">photography</a></li>
-                <li><a class="navLink3" href="about.html">about</a></li>
-                <li><a class="navLink4" href="contact.html">contact</a></li>
-            </ul>
-        </nav>
+                <div class="mobileMenu">
+                    <div class="dropMenu">
+                        <button class="menubtn"><img src="images/menu.png" alt="menu icon"></button>
+                        <div class="menuContent">
+                            <a href="fullstack.html">fullstack</a>
+                            <a href="photography.html">photography</a>
+                            <a href="about.html">about</a>
+                            <a href="contact.html">contact</a>
+                        </div>
+                    </div>
+                    <a href="index.html">BEARDY STUDIOS</a>
+                </div>
+                
+                <div class="desktopMenu">
+                    <a href="index.html"><img src="images/beardlogo.jpg"></a>
+                    <ul>
+                        <li><a href="fullstack.html">fullstack</a></li> 
+                        <li><a href="photography.html">photography</a></li> 
+                        <li><a href="about.html">about</a></li> 
+                        <li><a href="contact.html">contact</a></li> 
+                    </ul>
+                    <div class="socialIcon">
+                    <a href="mailto:hello@beardystudios.com?subject=Mail from Our Site"><img src="images/email.png" alt="email icon"></a>
+                    <a href="https://www.linkedin.com/in/ryancarville/" target="_blank"><img src="images/linkedInIcon.png" alt="linkedIn icon"></a>
+                    <a href="https://www.github.com" target="_blank"><img src="images/gitHubIcon.png" alt="github icon"></a>
+                    <a href="https://www.facebook.com/beardystudios" target="_blank"><img src="images/facebookIcon.png" alt="facebook icon"></a>
+                    <a href="https://www.instagram.com/ryancarville" target="_blank"><img src="images/instagramIcon.png" alt="instagram icon"></a>
+                    </div>
+                </div>
+            </nav>
         <main role="main">
-            <p>quiz app</p>
-            <div class="fullstackProject">
-                <img src="images/imgPlaceholder.jpg" alt="fullstack project image">
-                <p>short app to test your photography knowledge.<br>html - css - js</p>
-                <ul class="demoGit">
-                    <a href="livelink.com">live demo</a>
-                    <a href="github.com">GitHub Repo</a>
-                </ul>
-            </div>
-            <br>
-            <p>project # 2</p>
-            <div class="fullstackProject">
-                    <img src="images/imgPlaceholder.jpg" alt="fullstack project image">
-                    <p>description of app.<br>coding language(s)</p>
+            <section class="container">
+                
+                <div class="fullstackProject">
+                    
+                    <img src="images/quizAppImg.png" alt="fullstack project image">    
+                    <p><span>quiz app</span></p>
+                    <p>short app to test your photography knowledge.<br><b>html - css - js</b></p>
                     <ul class="demoGit">
-                        <a href="livelink.com">live demo</a>
-                        <a href="github.com">GitHub Repo</a>
+                        <a href="https://ryancarville.github.io/quizAppFinal/" target="_blank">live demo</a>
+                        <a href="https://github.com/ryancarville/quizAppFinal" target="_blank">GitHub Repo</a>
+                    </ul>
+                    
+                </div>
+                <br>
+                
+                <div class="fullstackProject">
+                   
+                    <img src="images/quizAppImg.png" alt="fullstack project image">
+                    <p><span>quiz app</span></p>
+                    <p>short app to test your photography knowledge.<br><b>html - css - js</b></p>
+                    <ul class="demoGit">
+                        <a href="https://ryancarville.github.io/quizAppFinal/" target="_blank">live demo</a>
+                        <a href="https://github.com/ryancarville/quizAppFinal" target="_blank">GitHub Repo</a>
                     </ul>
                 </div>
+            </section>
         </main>
         <br>
         <footer>©Beardy Studios 2019</footer>
