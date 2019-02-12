@@ -14,22 +14,23 @@
                 <div class="dropMenu">
                     <button class="menubtn"><img src="images/menu.png" alt="menu icon"></button>
                     <div class="menuContent">
-                        <a href="fullstack.html">fullstack</a>
-                        <a href="photography.html">photography</a>
-                        <a href="about.html">about</a>
-                        <a href="contact.html">contact</a>
+                        <a class="jsHomeLink">home</a>
+                        <a class="jsFullstackLink">fullstack</a>
+                        <a class="jsPhotographyLink">photography</a>
+                        <a class="jsAboutLink">about</a>
+                        <a class="jsContactLink">contact</a>
                     </div>
                 </div>
-                <a href="index.html">BEARDY STUDIOS</a>
+                <a>BEARDY STUDIOS</a>
             </div>
             
             <div class="desktopMenu">
-                <a href="index.html"><img src="images/beardlogo.jpg"></a>
+                <a class="jsHomeLink"><img src="images/beardlogo.jpg"></a>
                 <ul>
-                   <li><a href="fullstack.html">fullstack</a></li> 
-                   <li><a href="photography.html">photography</a></li> 
-                   <li><a href="about.html">about</a></li> 
-                   <li><a href="contact.html">contact</a></li> 
+                   <li><a class="jsFullstackLink">fullstack</a></li> 
+                   <li><a class="jsPhotographyLink">photography</a></li> 
+                   <li><a class="jsAboutLink">about</a></li> 
+                   <li><a class="jsContactLink">contact</a></li> 
                 </ul>
                 <div class="socialIcon">
                 <a href="mailto:hello@beardystudios.com?subject=Mail from Our Site"><img src="images/email.png" alt="email icon"></a>
@@ -40,7 +41,7 @@
                 </div>
             </div>
         </nav>
-        <main role="main">
+        <main id="main">
             <div class="featured" id="featuredBio">
                 <p>Fullstack developer and photography studio.<br>
                 Find out more <a href="about.html">here</a>.</p>
@@ -66,5 +67,7 @@
         <br>
         <footer>©Beardy Studios 2019</footer>
         <br>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="main.js"></script>
     </body>
 </html>
