@@ -1,11 +1,37 @@
-function fullstack(){
-   return 
-};
+function featuredFullstackClick(){
+    $('.featured').on('click', '.jsFullstackLink', event => {
+        document.getElementById("main").innerHTML=
+        `<section class="container">
+            <div class="fullstackProject">
+                <img src="images/quizAppImg.png" alt="fullstack project image">    
+                <p><span>quiz app</span></p>
+                <p>short app to test your photography knowledge.<br><b>html - css - js</b></p>
+                <ul class="demoGit">
+                    <a href="https://ryancarville.github.io/quizAppFinal/" target="_blank">live demo</a>
+                    <a href="https://github.com/ryancarville/quizAppFinal" target="_blank">GitHub Repo</a>
+                </ul>
+            </div>
+            <br>
+            <div class="fullstackProject">
+                <img src="images/quizAppImg.png" alt="fullstack project image">
+                <p><span>quiz app</span></p>
+                <p>short app to test your photography knowledge.<br><b>html - css - js</b></p>
+                <ul class="demoGit">
+                    <a href="https://ryancarville.github.io/quizAppFinal/" target="_blank">live demo</a>
+                    <a href="https://github.com/ryancarville/quizAppFinal" target="_blank">GitHub Repo</a>
+                </ul>
+            </div>
+        </section>`;
+    });
+}
 
-
-function updatePage(){
-    $('.main').html(fullstack());
-};
+function featuredPhtographyClick(){
+    $('.featured').on('click', '.jsPhotographyLink', event => {
+        document.getElementById("main").innerHTML= `<div class="photography">
+        <p>Will complete this later.</p>
+    </div>`;
+    });
+}
 
 function fullstackClick(){
     $('.desktopMenu').on('click', '.jsFullstackLink', event => {
@@ -68,7 +94,7 @@ function contactClick(){
     $('.desktopMenu').on('click', '.jsContactLink', event => {
         document.getElementById("main").innerHTML=
         `<div class="contactForm">
-            <form action="/action_page.php">
+        <form action="FILL THIS OUT" method="post" enctype="text/plain">
                 <fieldset>
                     <legend>say hello!</legend>
                     <label for="email">email</label><br>
@@ -85,6 +111,7 @@ function contactClick(){
                 </fieldset>
             </form>
         </div>`;
+        contactFormSumbited();
     });
 }
 
@@ -176,10 +203,10 @@ function mobileContactClick(){
     $('.menuContent').on('click', '.jsContactLink', event => {
         document.getElementById("main").innerHTML=
         `<div class="contactForm">
-            <form action="/action_page.php">
+            <form action="FILL THIS OUT" method="post" enctype="text/plain">
                 <fieldset>
                     <legend>say hello!</legend>
-                    <label for="email">email</label><br>
+                    <label for="email">email</label><br>  
                     <input type="email" placeholder="&nbsp;your email here" class="inputBox" required><br>
                     <label for="telNum">contact number</label><br>
                     <input type="tel" placeholder="&nbsp;your phone number here" class="inputBox"><br>
@@ -193,6 +220,7 @@ function mobileContactClick(){
                 </fieldset>
             </form>
         </div>`;
+        contactFormSumbited();
     });
 }
 
@@ -210,7 +238,6 @@ function mobileHomeClick(){
             <div class="featured">
                     <a href="photography.html"><img src="images/photographyHomeImg.jpg"></a><span>photography</span>
             </div>
-            
             <br>
         </div>
         <div class="contactHome">
@@ -223,8 +250,9 @@ function mobileHomeClick(){
     });
 }
 
-
 function start(){
+    featuredFullstackClick()
+    featuredPhtographyClick();
     fullstackClick();
     phtographyClick();
     aboutClick();
@@ -236,10 +264,6 @@ function start(){
     mobileAboutClick();
     mobileContactClick();
     mobileHomeClick();
-
-
-};
+}
 
 $(start());
-
-
