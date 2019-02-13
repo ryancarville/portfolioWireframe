@@ -92,6 +92,7 @@ function aboutClick(){
 
 function contactClick(){
     $('.desktopMenu').on('click', '.jsContactLink', event => {
+        event.preventDefault();
         document.getElementById("main").innerHTML=
         `<div class="contactForm">
         <form action="FILL THIS OUT" method="post" enctype="text/plain">
@@ -201,6 +202,7 @@ function mobileAboutClick(){
 
 function mobileContactClick(){
     $('.menuContent').on('click', '.jsContactLink', event => {
+        event.preventDefault();
         document.getElementById("main").innerHTML=
         `<div class="contactForm">
             <form action="FILL THIS OUT" method="post" enctype="text/plain">
