@@ -3,51 +3,71 @@
     <head>
         <title>Portfolio Wireframe</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <meta name="viewport" content="width=device-width">
         <meta name="description" content="HTML wireframe for portolio app">
         <meta name="keywords" content="wireframe, html, portfolio">
-        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
         <link rel="stylesheet" type="text/css" href="main.css">
     </head>
     <body>
         <nav role="navigation">
-            <p>NAME</p>
-            <p class="menu">HAMBURGER ICON</p>
-            <img src="beardylogo.png" alt="beardy studios logo">
-            <img src="hamburger.png" alt="hamburger menu icon">
-            <ul class="navLinks">
-                <li><a class="navLink1" href="fullstack.html">fullstack</a></li>
-                <li><a class="navLink2" href="photography.html">photography</a></li>
-                <li><a class="navLink3" href="about.html">about</a></li>
-                <li><a class="navLink4" href="contact.html">contact</a></li>
-            </ul>
+            <div class="mobileMenu">
+                <div class="dropMenu">
+                    <button class="menubtn"><img src="images/menu.png" alt="menu icon"></button>
+                    <div class="menuContent">
+                        <a class="jsHomeLink">home</a>
+                        <a class="jsFullstackLink">fullstack</a>
+                        <a class="jsPhotographyLink">photography</a>
+                        <a class="jsAboutLink">about</a>
+                        <a class="jsContactLink">contact</a>
+                    </div>
+                </div>
+                <a>BEARDY STUDIOS</a>
+            </div>
+            
+            <div class="desktopMenu">
+                <a class="jsHomeLink"><img src="images/beardlogo.jpg"></a>
+                <ul>
+                   <li><a class="jsFullstackLink">fullstack</a></li> 
+                   <li><a class="jsPhotographyLink">photography</a></li> 
+                   <li><a class="jsAboutLink">about</a></li> 
+                   <li><a class="jsContactLink">contact</a></li> 
+                </ul>
+                <div class="socialIcon">
+                <a href="mailto:hello@beardystudios.com?subject=Mail from Our Site"><img src="images/email.png" alt="email icon"></a>
+                <a href="https://www.linkedin.com/in/ryancarville/" target="_blank"><img src="images/linkedInIcon.png" alt="linkedIn icon"></a>
+                <a href="https://www.github.com" target="_blank"><img src="images/gitHubIcon.png" alt="github icon"></a>
+                <a href="https://www.facebook.com/beardystudios" target="_blank"><img src="images/facebookIcon.png" alt="facebook icon"></a>
+                <a href="https://www.instagram.com/ryancarville" target="_blank"><img src="images/instagramIcon.png" alt="instagram icon"></a>
+                </div>
+            </div>
         </nav>
-        <main role="main">
+        <main id="main">
             <div class="featured" id="featuredBio">
-                <br><br><br><br>Short BIO
+                <p>Fullstack developer and photography studio.<br>
+                Find out more <a href="about.html">here</a>.</p>
             </div>
-            
-            <p>fullstack</p>
-            <div class="featured">
-                <a href="fullstack.html"><img src="images/imgPlaceholder.jpg" alt="fullstack placeholder image"></a>
+            <div class="container">
+                <div class="featured">  
+                    </a><span>fullstack</span><a class="jsFullstackLink"><img src="images/quizAppImg.jpg">
+                </div>
+                <div class="featured">
+                        <a class="jsPhotographyLink"><img src="images/photographyHomeImg.jpg"></a><span>photography</span>
+                </div>
+                
+                <br>
             </div>
-            <p>photography</p>
-            <div class="featured">
-                <a href="photography.html"><img src="images/imgPlaceholder.jpg" alt="photography placeholder image"></a>
-            </div>
-            <br>
-            
-            <p>contact</p>
             <div class="contactHome">
-                <a href="mailto:hello@beardystudios.com"><img src="images/email.png" alt="email icon"></a>
-                <a href="github.com"><img src="images/gitHubIcon.png" alt="github icon"></a>
-                <a href="linkedin.com"><img src="images/linkedInIcon.png" alt="linkedIn icon"></a>
-                <a href="instagram.com/ryancarville"><img src="images/instagramIcon.png" alt="instagram icon"></a>
-                <a href="facebook.com/beardystudios"><img src="images/facebookIcon.png" alt="facebook icon"></a>
+                <a href="mailto:hello@beardystudios.com?subject=Mail from Our Site"><img src="images/email.png" alt="email icon"></a>
+                <a href="https://www.linkedin.com/in/ryancarville/" target="_blank"><img src="images/linkedInIcon.png" alt="linkedIn icon"></a>
+                <a href="https://www.github.com" target="_blank"><img src="images/gitHubIcon.png" alt="github icon"></a>
+                <a href="https://www.facebook.com/beardystudios" target="_blank"><img src="images/facebookIcon.png" alt="facebook icon"></a>
+                <a href="https://www.instagram.com/ryancarville" target="_blank"><img src="images/instagramIcon.png" alt="instagram icon"></a>
             </div>
         </main>
         <br>
         <footer>©Beardy Studios 2019</footer>
         <br>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="main.js"></script>
     </body>
 </html>
